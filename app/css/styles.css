@@ -3,6 +3,13 @@
     background: url('../images/agents.png') no-repeat top left;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 .button {
   text-align: center;
   font-size: 23px;
@@ -18,4 +25,8 @@
   text-transform: uppercase;
   color: #fff;
   padding: 10px 20px;
+}
+
+#profile {
+  background: url('../includes/profile/images/header-mask-portfolio-bg.png');
 }
