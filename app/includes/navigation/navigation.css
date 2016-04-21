@@ -52,14 +52,50 @@ nav li a {
 
 .toggle-menu {
   text-align: center;
+  position: relative;
 }
 
 .toggle-menu a {
   color: #d63b52;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
 }
 
+.toggle-dropdown {
+  position: absolute;
+  top: 99%;
+  right: -15px;
+  background: #fff;
+  padding: 40px 29px 20px 2px;
+  z-index: 10;
+}
+
+.toggle-dropdown li {
+  padding: 0 20px;
+  font-size: 18px;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.toggle-dropdown li:first {
+  margin-top: 0;
+}
+
+.toggle-container {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.toggle-container.toggled {
+  background: #971e23;
+}
+
+.toggled .toggle-menu > a {
+  color: white;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
   .logo img{

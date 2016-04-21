@@ -29,4 +29,7 @@
 
 #profile {
   background: url('../includes/profile/images/header-mask-portfolio-bg.png');
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 1000px;
 }
