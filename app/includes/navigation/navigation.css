@@ -4,3 +4,44 @@
     background: url('./images/agents.png') no-repeat top left;
 }
 
+.logo {
+  position: relative;
+  top: 25px;
+}
+
+.navigation-container {
+  background: #3586a1;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 32px;
+  text-align: center;
+  padding: 12px 0 11px 0;
+}
+
+nav li a {
+  color: #fff;
+  font-size: 12px;
+}
+
+.secondary-nav {
+  float: right;
+}
+
+.secondary-nav li{
+  display: inline-block;
+  margin-left: 35px;
+  padding-top: 29px;
+  padding-bottom: 36px;
+}
+
+.secondary-nav li a {
+  font-size: 16px;
+  color: #3586a1;
+}
+
+.button-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
