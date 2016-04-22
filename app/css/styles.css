@@ -10,6 +10,12 @@
   display:         flex;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 .button {
   text-align: center;
   font-size: 23px;

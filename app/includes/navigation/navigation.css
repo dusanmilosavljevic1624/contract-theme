@@ -65,10 +65,12 @@ nav li a {
 .toggle-dropdown {
   position: absolute;
   top: 99%;
-  right: -15px;
-  background: #fff;
+  left: 100%;
+  right: 0;
+  background: #f7f7f7;
   padding: 40px 29px 20px 2px;
   z-index: 10;
+  text-align: right;
 }
 
 .toggle-dropdown li {
@@ -88,22 +90,24 @@ nav li a {
   padding-right: 0;
 }
 
-.toggle-container.toggled {
-  background: #971e23;
-}
-
-.toggled .toggle-menu > a {
-  color: white;
-  text-decoration: none;
-}
 
 @media screen and (max-width: 768px) {
   .logo img{
     height: 40px;
   }
 
-  .toggle-menu {
-    padding: 30px 0;
+  .toggle-container.toggled {
+    background: #971e23;
+  }
+
+  .toggle-menu a {
+    line-height: 85px;
+    min-height: 85px;
+  }
+
+  .toggled .toggle-menu > a {
+    color: white;
+    text-decoration: none;
   }
 }
 
