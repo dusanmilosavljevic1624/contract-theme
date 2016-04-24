@@ -4,3 +4,44 @@
     background: url('./images/agents.png') no-repeat top left;
 }
 
+#profile h1, #profile h2{
+  color: #fff;
+}
+
+.job-title {
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 30px;
+  float: left;
+  max-width: 33%;
+}
+
+.profile-social:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.profile-social li {
+  float: left;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #profile h1{
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  div.profile-image-container {
+    padding-right: 0;
+  }
+
+  .person-container {
+    margin: 20px 0;
+  }
+}

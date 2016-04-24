@@ -3,11 +3,30 @@
     background: url('../images/agents.png') no-repeat top left;
 }
 
+ul {
+  list-style: none;
+}
+
+p {
+  color: #fff;
+}
+
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+
+.table-container {
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table;
 }
 
 a:hover, a:focus {
@@ -20,12 +39,29 @@ a:hover, a:focus {
     float: none;
 }
 
+.button-container ul {
+  padding-left: 0;
+  width: 100%;
+}
+
+.button-container .button:first-child{
+  margin-top: 0;
+}
+
+.button-container .button:last-child{
+  margin-bottom: 0;
+}
+
 .button {
   text-align: center;
   font-size: 23px;
   line-height: 23;
   padding: 5px 0;
   border-radius: 2px;
+  margin: 25px 0;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .btn.call-to-action-button {
@@ -39,10 +75,23 @@ a:hover, a:focus {
 
 #profile {
   background: url('../includes/profile/images/header-mask-portfolio-bg.png');
-  -webkit-background-size: cover;
   background-size: cover;
-  min-height: 1000px;
+  background-repeat: no-repeat;
+  /*background-position: -1305px 0;*/
+  min-height: 100vh;
 }
+
+.button {
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  outline: none;
+  display: inline-block;
+  line-height: 30px;
+}
+
 @media screen and (max-width: 1200px) {
   .no-p-mt {
     padding-left: 0 !important;
