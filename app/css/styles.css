@@ -10,6 +10,10 @@
   display:         flex;
 }
 
+a:hover, a:focus {
+  text-decoration: none;
+}
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -38,4 +42,18 @@
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 1000px;
+}
+@media screen and (max-width: 1200px) {
+  .no-p-mt {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .img-responsive-desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
