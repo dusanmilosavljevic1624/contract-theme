@@ -3,45 +3,96 @@
 #standard-navigation .test {
     background: url('./images/agents.png') no-repeat top left;
 }
-
-#profile h1, #profile h2{
-  color: #fff;
+#profile h1, #profile h2 {
+    color: #fff;
 }
-
 .job-title {
-  font-weight: normal;
-  margin-top: 0;
-  font-size: 16px;
-  line-height: 30px;
-  float: left;
-  max-width: 33%;
-}
-
-.profile-social:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.profile-social li {
-  float: left;
-  margin-left: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  #profile h1{
-    font-size: 30px;
-  }
-  p {
+    font-weight: normal;
+    margin-top: 0;
     font-size: 16px;
-    line-height: 1.4;
-  }
+    line-height: 30px;
+    float: left;
+    max-width: 40%;
+}
+.profile-social:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.profile-social li {
+    float: left;
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+    #profile h1 {
+        font-size: 30px;
+        margin-top: 34.5px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    div.profile-image-container {
+        padding-right: 0;
+    }
+    .person-container {
+        margin: 20px 0;
+    }
+    .button {
+      font-size: 20px;
+      line-height: 20px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .person-container {
+        margin-top: 70px;
+    }
+    .button-container ul {
+        padding-left: 0;
+    }
+    .button-container li {
+        width: auto;
+        float: left;
+        margin-left: 20px;
+    }
+    .button-container li:first-child {
+        margin-left: 0;
+    }
+    .button {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    #profile h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    .image-container img.img-responsive {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .job-title {
+      font-size: 24px;
+      margin-bottom: 26px;
+    }
 
-  div.profile-image-container {
-    padding-right: 0;
-  }
+    .agent-description {
+      margin-bottom: 35px;
+      font-size: 18px;
+      line-height: 35px;
+    }
+}
 
-  .person-container {
-    margin: 20px 0;
-  }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #profile h1 {
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #profile p {
+        font-size: 18px;
+        line-height: 35px;
+    }
 }

@@ -1,11 +1,12 @@
 "use strict";
-require("./common/data-loader.js").init("optimal");
+require("./common/data-loader.js").init("noImage");
 var $ = require("jquery");
 var _ = require("underscore");
 var JSContext = require("./common/jscontext.js");
 var moment = require("moment");
 var navigation = require("../includes/navigation/navigation.js");
 var profile = require("../includes/profile/profile.js");
+var profileMinimal = require('../includes/profile-minimal/profile-minimal.js');
 
 var getPostsData = function() {
     return {
@@ -52,7 +53,6 @@ var getProfileData = function() {
             addFormattedPhone(member, "team_member_fax");
         });
     }
-
     return profileData;
 };
 
@@ -99,8 +99,17 @@ var _getCurrentPageName = function() {
 
 
 var initializeTemplates = function() {
+    var profileData = JSContext.getProfile();
     navigation.init();
-    profile.init();
+    console.log(profileData.profile_photo);
+    if(profileData.profile_photo === "alohasnackbar") {
+      profile.init();
+      console.log('profile init');
+    } else {
+      profileMinimal.init();
+      console.log('profileMinimal init');
+    }
+
     // Templates and modules init goes here.
 };
 
@@ -115,5 +124,3 @@ $(document).ready(function() {
     initializeTemplates();
     setAccentColor();
 });
-
-

@@ -2,6 +2,7 @@ var JSContext = require("./jscontext.js");
 
 var buildDummyJSContext = function(profileType){
     var profile = {};
+    console.log('profile type is: ' + profileType);
     switch(profileType){
         case("optimal"):
             profile = require("../../fixtures/profile-optimal.json");
@@ -11,6 +12,9 @@ var buildDummyJSContext = function(profileType){
             break;
         case("edge"):
             profile = require("../../fixtures/profile-edge-cases.json");
+            break;
+        case("noImage"):
+            profile = require("../../fixtures/profile-no-img.json");
             break;
         default:
             profile = require("../../fixtures/profile-optimal.json");
@@ -38,4 +42,3 @@ module.exports = {
         initJSContext(profileType);
     }
 }
-

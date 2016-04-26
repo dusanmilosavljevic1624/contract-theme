@@ -1,8 +1,8 @@
-require("./profile.css");
+require("../profile/profile.css");
 var Module = require("theme_module_loader");
 var JSContext = require("../../js/common/jscontext.js");
-var htmlTemplate = require("./profile.html");
-var callback = require("./profile-callback.js");
+var htmlTemplate = require("./profile-minimal.html");
+var callback = require("../profile/profile-callback.js");
 var data = window.JSContext;
 module.exports = {
     init: function(){
@@ -13,8 +13,6 @@ module.exports = {
             data: data, /* the data available in the module */
             callback: callback /* a function to execute after the module has been rendered. Wrap there any javascript for the module */
         };
-
-        console.log(data);
 
         var standardNavigation = new Module(args);
     }

@@ -78,7 +78,7 @@ nav li a {
 }
 
 .toggle-dropdown li {
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   font-size: 18px;
   list-style: none;
   margin: 10px 0;
